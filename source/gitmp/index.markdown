@@ -97,11 +97,14 @@ footer: true
 
 SSH公钥设置
 -----------------------------------------------------
+> Check for SSH keys：<font color=#0099ff>`ls -al ~/.ssh`</font>
+> 
 > <font color=#0099ff>`ssh-keygen -t rsa -C "your_email@example.com"`</font>
 > 
 > <font color=#0099ff>`eval "$(ssh-agent -s)"`</font>
 > 
-> <font color=#0099ff>`ssh-add ~/.ssh/id_rsa`</font>
+> <font color=#0099ff>`ssh-add ~/.ssh/id_rsa`</font>，这里如果出现
+> Could not open a connection to your authentication agent.错误提示先执行<font color=#0099ff>`ssh-agent.exe bash`</font>
 > 
 > <font color=#0099ff>`vim ~/.ssh/id_rsa.pub`</font>
 > 拷贝里面的内容SSH公钥，公钥名称可以随便起
