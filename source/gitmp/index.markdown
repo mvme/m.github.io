@@ -305,9 +305,9 @@ git tag
 > 
 > <font color=#0099ff>`git diff --cached`</font>暂存区和历史提交的差异
 > 
-> <font color=#0099ff>`git diff> HEAD~2`</font>当前工作区与其他历史提交的差异
+> <font color=#0099ff>`git diff HEAD~2`</font>当前工作区与其他历史提交的差异
 > 
-> <font color=#0099ff>`git diff> HEAD~2 -- <file>`</font>当前工作区与其他历史提交的某个特定文件的差异
+> <font color=#0099ff>`git diff HEAD~2 -- <file>`</font>当前工作区与其他历史提交的某个特定文件的差异
 > 
 > <font color=#0099ff>`git diff HEAD HEAD~2`</font>比较两个commit对象的差异
 > 

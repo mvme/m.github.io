@@ -6,9 +6,9 @@ comments: true
 categories: [git, octopress, ruby, DevKit]
 ---
 
-![image](../images/amors.jpg)
+![image]({{ root_url }}/images/amors.jpg)
 
-{% video ../video/yufei1.mp4 640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
+{% video http://video-js.zencoder.com/oceans-clip.mp4 640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
 
 
 ```
