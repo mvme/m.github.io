@@ -8,7 +8,7 @@ categories: [git, octopress, ruby, DevKit]
 
 ![image]({{ root_url }}/images/amors.jpg)
 
-{% video http://119.188.38.49/6572FD00AA73A82B53CEC62ABC/03000A01005A712D8EEB78B0609F2D7EF4761C-54B0-401B-BC0E-DF2265D3D3D0.mp4?ccode=0512&duration=111&expire=18000&psid=51c3cedff159cb473094f86ec2a052f4&ups_client_netip=72f15cec&ups_ts=1520314436&ups_userid=&utid=R%2BckEymwXloCAXLxXOzg3C2x&vid=XMzM2ODQ5OTc2MA%3D%3D&vkey=A6eb6a25406c41915da13758a56b704fe 640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
+{% video  640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
 
 
 ```
