@@ -8,7 +8,7 @@ categories: [git, octopress, ruby, DevKit]
 
 ![image]({{ root_url }}/images/amors.jpg)
 
-{% video  640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
+{% video http://video.699pic.com/videos/46/06/36/jAMk3hgq4CY21519460636.mp4 640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
 
 
 ```
