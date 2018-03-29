@@ -4,7 +4,7 @@
   <title><![CDATA[超神传说]]></title>
   <link href="http://mvme.github.io/atom.xml" rel="self"/>
   <link href="http://mvme.github.io/"/>
-  <updated>2018-03-29T18:03:16+08:00</updated>
+  <updated>2018-03-29T18:31:10+08:00</updated>
   <id>http://mvme.github.io/</id>
   <author>
     <name><![CDATA[Amorsar]]></name>
@@ -12,6 +12,102 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Idea]]></title>
+    <link href="http://mvme.github.io/blog/2018/03/29/idea/"/>
+    <updated>2018-03-29T16:15:04+08:00</updated>
+    <id>http://mvme.github.io/blog/2018/03/29/idea</id>
+    <content type="html"><![CDATA[<h1>idea设置</h1>
+
+<h2>idea设置显示行号</h2>
+
+<blockquote><h4>1. File>Settings>Editor>General>Appearance>show line numbers</h4>
+
+<h4>2. view>Active Editor>Show Line Numbers</h4></blockquote>
+
+<hr />
+
+<h2>idea快捷键使用</h2>
+
+<blockquote><h4>1. 自动导包：Alt+Enter</h4>
+
+<h4>2. getter and setter: Alt+Insert</h4>
+
+<h4>3. main方法: psvm</h4>
+
+<h4>4. system.out: sout</h4></blockquote>
+
+<hr />
+
+<h2>myEclipse快捷键设置</h2>
+
+<blockquote><h4>File>Settings>Keymap>Keymaps-Ecpilse</h4>
+
+<p><img src="http://mvme.github.io/images/idea/1.png" height="320" width="640" alt="image" /></p></blockquote>
+
+<hr />
+
+<h2>代码提示</h2>
+
+<blockquote><h4>Flie->Settings->Keymap</h4>
+
+<p>将Editor Actions收起，点开Main menu-Code-Completion 在Cyclic Expand Word处右键remove Alt + /（移除这个快捷键）
+然后继续右键上面的 Basic 点击 Add KeyboardShortcut 然后将Alt+/ 加入</p>
+
+<h4><img src="http://mvme.github.io/images/idea/2.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>设置toolbar</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/3.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>字体设置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/4.png" height="320" width="640" alt="image" /></h4>
+
+<h4><img src="http://mvme.github.io/images/idea/5.png" height="320" width="640" alt="image" /></h4>
+
+<h4><img src="http://mvme.github.io/images/idea/6.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>Serialization设置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/7.png" height="320" width="640" alt="image" /></h4>
+
+<h4><img src="http://mvme.github.io/images/idea/8.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>Java注释模板设置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/9.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>编码设置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/10.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>Tomcat配置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/11.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+
+<h2>Jdk设置</h2>
+
+<blockquote><h4><img src="http://mvme.github.io/images/idea/12.png" height="320" width="640" alt="image" /></h4></blockquote>
+
+<hr />
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我的博客]]></title>
