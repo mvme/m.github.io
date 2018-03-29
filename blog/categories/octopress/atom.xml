@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | 超神传说]]></title>
+  <link href="http://mvme.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://mvme.github.io/"/>
+  <updated>2018-03-29T18:03:16+08:00</updated>
+  <id>http://mvme.github.io/</id>
+  <author>
+    <name><![CDATA[Amorsar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我的博客]]></title>
+    <link href="http://mvme.github.io/blog/2015/12/21/myblog/"/>
+    <updated>2015-12-21T12:54:26+08:00</updated>
+    <id>http://mvme.github.io/blog/2015/12/21/myblog</id>
+    <content type="html"><![CDATA[<p><img src="/images/amors.jpg" alt="image" /></p>
+
+<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg">http://assets.jikexueyuan.com/practice/list_android.jpg</a>'><source src='http://video.699pic.com/videos/46/06/36/jAMk3hgq4CY21519460636.mp4">http://video.699pic.com/videos/46/06/36/jAMk3hgq4CY21519460636.mp4</a>' ></video></p>
+
+<pre><code>public class MyBlog{
+    public static void main(String[] args) {
+        System.out.println("haha")
+    }
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

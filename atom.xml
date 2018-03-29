@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[超神传说]]></title>
+  <link href="http://mvme.github.io/atom.xml" rel="self"/>
+  <link href="http://mvme.github.io/"/>
+  <updated>2018-03-29T18:03:16+08:00</updated>
+  <id>http://mvme.github.io/</id>
+  <author>
+    <name><![CDATA[Amorsar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我的博客]]></title>
+    <link href="http://mvme.github.io/blog/2015/12/21/myblog/"/>
+    <updated>2015-12-21T12:54:26+08:00</updated>
+    <id>http://mvme.github.io/blog/2015/12/21/myblog</id>
+    <content type="html"><![CDATA[<p><img src="http://mvme.github.io/images/amors.jpg" alt="image" /></p>
+
+<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg'><source src='http://video.699pic.com/videos/46/06/36/jAMk3hgq4CY21519460636.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>public class MyBlog{
+</span><span class='line'>  public static void main(String[] args) {
+</span><span class='line'>      System.out.println("haha")
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
