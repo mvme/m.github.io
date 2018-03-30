@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Java - 超神传说</title>
+  <meta name="author" content="Amorsar">
+
+  
+  <meta name="description" content="java全局Fileter 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mvme.github.io/blog/2018/03/30/java/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="超神传说" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">超神传说</a></h1>
+  
+    <h2>long long ago.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="mvme.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <!-- <li><a href="/gitmp">git</a></li> -->
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Java</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-03-30T10:27:27+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>10:27 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>java全局Fileter</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package tv.sciopovo.filter;
+</span><span class='line'>
+</span><span class='line'>import java.io.IOException;
+</span><span class='line'>import javax.servlet.Filter;
+</span><span class='line'>import javax.servlet.FilterChain;
+</span><span class='line'>import javax.servlet.FilterConfig;
+</span><span class='line'>import javax.servlet.ServletException;
+</span><span class='line'>import javax.servlet.ServletRequest;
+</span><span class='line'>import javax.servlet.ServletResponse;
+</span><span class='line'>import javax.servlet.http.HttpServletRequest;
+</span><span class='line'>import org.apache.log4j.Logger;
+</span><span class='line'>
+</span><span class='line'>/**
+</span><span class='line'>* @author duanxw
+</span><span class='line'>* @date  2017/9/25.
+</span><span class='line'>*/
+</span><span class='line'>public class GlobalFilter implements Filter {
+</span><span class='line'>    private static Logger log = LoggerFactory.getLogger(GlobalFilter.class);
+</span><span class='line'>    @Override
+</span><span class='line'>    public void init(FilterConfig filterConfig) throws ServletException {
+</span><span class='line'>    }
+</span><span class='line'>    @Override
+</span><span class='line'>    public void doFilter(ServletRequest request, ServletResponse response,
+</span><span class='line'>                         FilterChain chain) throws IOException, ServletException {
+</span><span class='line'>        String basePath = "/";
+</span><span class='line'>        HttpServletRequest req = (HttpServletRequest) request;
+</span><span class='line'>        HttpServletResponse res = (HttpServletResponse) response;
+</span><span class='line'>        req.setCharacterEncoding("utf-8");
+</span><span class='line'>        response.setCharacterEncoding("utf-8");
+</span><span class='line'>        StringBuilder sb = new StringBuilder().append(req.getScheme()).append("://").append(req.getServerName());
+</span><span class='line'>        if (req.getServerPort() != 80) {
+</span><span class='line'>            sb.append(":").append(req.getServerPort());
+</span><span class='line'>        }
+</span><span class='line'>        sb.append(req.getContextPath());
+</span><span class='line'>        sb.append("/");
+</span><span class='line'>        basePath = sb.toString();
+</span><span class='line'>        req.setAttribute("basePath", basePath);
+</span><span class='line'>        doLog(req, basePath);
+</span><span class='line'>        chain.doFilter(req, res);
+</span><span class='line'>    }
+</span><span class='line'>    @Override
+</span><span class='line'>    public void destroy() {
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    private static final ThreadLocal&lt;SimpleDateFormat&gt; sdf = new ThreadLocal&lt;SimpleDateFormat&gt;() {
+</span><span class='line'>        @Override
+</span><span class='line'>        protected SimpleDateFormat initialValue() {
+</span><span class='line'>            return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+</span><span class='line'>        }
+</span><span class='line'>    };
+</span><span class='line'>
+</span><span class='line'>    @SuppressWarnings("unchecked")
+</span><span class='line'>    private void doLog(HttpServletRequest ai, String basePath) {
+</span><span class='line'>        //获取请求界面的路径
+</span><span class='line'>        String uri = ai.getRequestURI();
+</span><span class='line'>        if(uri.contains(".") && !uri.contains(".do") && !uri.contains(".action")) {
+</span><span class='line'>            return;
+</span><span class='line'>        }
+</span><span class='line'>        StringBuilder sb = new StringBuilder("\nMyFilter action report -------- ")
+</span><span class='line'>                .append(sdf.get().format(new Date())).append(" ------------------------------\n");
+</span><span class='line'>        sb.append("Controller  : ").append(ai.getClass().getName()).append(".(")
+</span><span class='line'>                .append(ai.getClass().getSimpleName()).append(".java:1)");
+</span><span class='line'>        sb.append("\nreqPath     : ").append(basePath.substring(0, basePath.length() - 1) + ai.getServletPath());
+</span><span class='line'>        sb.append("\nMethod      : ").append(ai.getMethod()).append("\n");
+</span><span class='line'>
+</span><span class='line'>        String urlParas = ai.getQueryString();
+</span><span class='line'>        if (urlParas != null) {
+</span><span class='line'>            sb.append("UrlPara     : ").append(urlParas).append("\n");
+</span><span class='line'>        }
+</span><span class='line'>
+</span><span class='line'>        // print all parameters
+</span><span class='line'>        Enumeration&lt;String&gt; e = ai.getParameterNames();
+</span><span class='line'>        if (e.hasMoreElements()) {
+</span><span class='line'>            sb.append("Parameter   : ");
+</span><span class='line'>            while (e.hasMoreElements()) {
+</span><span class='line'>                String name = e.nextElement();
+</span><span class='line'>                String[] values = ai.getParameterValues(name);
+</span><span class='line'>                if (values.length == 1) {
+</span><span class='line'>                    sb.append(name).append("=").append(values[0]);
+</span><span class='line'>                }
+</span><span class='line'>                else {
+</span><span class='line'>                    sb.append(name).append("[]={");
+</span><span class='line'>                    for (int i=0; i&lt;values.length; i++) {
+</span><span class='line'>                        if (i &gt; 0) {
+</span><span class='line'>                            sb.append(",");
+</span><span class='line'>                        }
+</span><span class='line'>                        sb.append(values[i]);
+</span><span class='line'>                    }
+</span><span class='line'>                    sb.append("}");
+</span><span class='line'>                }
+</span><span class='line'>                sb.append("  ");
+</span><span class='line'>            }
+</span><span class='line'>            sb.append("\n");
+</span><span class='line'>        }
+</span><span class='line'>        sb.append("--------------------------------------------------------------------------------\n");
+</span><span class='line'>        log.info(sb.toString());
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>页面获取：${requestScope.basePath}
+</span><span class='line'>web.xml配置：
+</span><span class='line'>&lt;filter&gt;
+</span><span class='line'>  &lt;filter-name&gt;GlobalFilter&lt;/filter-name&gt;
+</span><span class='line'>  &lt;filter-class&gt;tv.sciopovo.filter.GlobalFilter&lt;/filter-class&gt;
+</span><span class='line'>&lt;/filter&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;filter-mapping&gt;
+</span><span class='line'>  &lt;filter-name&gt;GlobalFilter&lt;/filter-name&gt;
+</span><span class='line'>  &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+</span><span class='line'>&lt;/filter-mapping&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>强制杀死Java进程监听器</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import javax.servlet.ServletContextEvent;
+</span><span class='line'>import javax.servlet.ServletContextListener;
+</span><span class='line'>import java.io.IOException;
+</span><span class='line'>
+</span><span class='line'>/**
+</span><span class='line'> * @author duanxw
+</span><span class='line'> * @date 2018/3/11.
+</span><span class='line'> */
+</span><span class='line'>public class ServletThreadListener implements ServletContextListener {
+</span><span class='line'>
+</span><span class='line'>    private static final String PLATFORM = System.getProperty("os.name");
+</span><span class='line'>
+</span><span class='line'>    @Override
+</span><span class='line'>    public void contextInitialized(ServletContextEvent sce) {
+</span><span class='line'>
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    @Override
+</span><span class='line'>    public void contextDestroyed(ServletContextEvent sce) {
+</span><span class='line'>        System.out.println("销毁......");
+</span><span class='line'>        String cmdStr = "ps -ef|grep java|grep -v grep|cut -c 9-15|xargs kill -9";
+</span><span class='line'>        cmdStr = "sudo killall -9 java";
+</span><span class='line'>        try {
+</span><span class='line'>            if (PLATFORM.contains("Windows")) {
+</span><span class='line'>                cmdStr = "taskkill /im java.exe /f";
+</span><span class='line'>                Runtime.getRuntime().exec(cmdStr);
+</span><span class='line'>            } else {
+</span><span class='line'>                Runtime.getRuntime().exec(cmdStr);
+</span><span class='line'>            }
+</span><span class='line'>        } catch (IOException e) {
+</span><span class='line'>            e.printStackTrace();
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>}
+</span><span class='line'>web.xml配置：
+</span><span class='line'>&lt;listener&gt;
+</span><span class='line'>    &lt;listener-class&gt;com.xxx.listener.ServletThreadListener&lt;/listener-class&gt;
+</span><span class='line'>&lt;/listener&gt;</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Amorsar</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2018-03-30T10:27:27+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>10:27 am</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+  
+    <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2018/03/30/git/" title="Previous Post: git">&laquo; git</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+
+  <section>
+    <div id="disqus_thread" aria-live="polite"><!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/blog/2018/03/30/java" data-title="java" data-url="http://mvme.github.io/blog/2018/03/30/java/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"amorsar"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/30/java/">Java</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/03/30/git/">Git</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/03/29/idea/">Idea</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/21/myblog/">我的博客</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Amorsar -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
