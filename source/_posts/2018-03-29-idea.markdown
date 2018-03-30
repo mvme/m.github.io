@@ -37,6 +37,8 @@ myEclipse快捷键设置
 > #### File>Settings>Keymap>Keymaps-Ecpilse
 >
 > {% img /images/idea/1.png 640 320 %}
+>
+> `![image]({{ root_url }}/images/amors.jpg =640x320)`
 
 
 ***
