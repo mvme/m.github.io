@@ -13,6 +13,7 @@ idea设置显示行号
 ------------------------
 
 > #### 1. File>Settings>Editor>General>Appearance>show line numbers
+>
 > #### 2. view>Active Editor>Show Line Numbers
 
 ***
@@ -21,8 +22,11 @@ idea快捷键使用
 ------------------------
 
 > #### 1. 自动导包：Alt+Enter
+>
 > #### 2. getter and setter: Alt+Insert
+>
 > #### 3. main方法: psvm
+>
 > #### 4. system.out: sout
 
 ***
@@ -31,7 +35,9 @@ myEclipse快捷键设置
 ---------------------------
 
 > #### File>Settings>Keymap>Keymaps-Ecpilse
-> ![image]({{ root_url }}/images/idea/1.png =640x320)
+>
+> {% img /images/idea/1.png 640 320 %}
+
 
 ***
 
@@ -39,60 +45,65 @@ myEclipse快捷键设置
 -----------------------
 
 > #### Flie->Settings->Keymap
+>
 将Editor Actions收起，点开Main menu-Code-Completion 在Cyclic Expand Word处右键remove Alt + /（移除这个快捷键）
 然后继续右键上面的 Basic 点击 Add KeyboardShortcut 然后将Alt+/ 加入
-> #### ![image]({{ root_url }}/images/idea/2.png =640x320)
+>
+> {% img /images/idea/2.png 640 320 %}
 
 ***
 
 设置toolbar
 -----------------------
 
-> #### ![image]({{ root_url }}/images/idea/3.png =640x320)
+> {% img /images/idea/3.png 640 320 %}
 
 ***
 
 字体设置
 ---------------------
 
-> #### ![image]({{ root_url }}/images/idea/4.png =640x320)
-> #### ![image]({{ root_url }}/images/idea/5.png =640x320)
-> #### ![image]({{ root_url }}/images/idea/6.png =640x320)
+> {% img /images/idea/4.png 640 320 %}
+>
+> {% img /images/idea/5.png 640 320 %}
+>
+> {% img /images/idea/6.png 640 320 %}
 
 ***
 
 Serialization设置
 --------------------------
 
-> #### ![image]({{ root_url }}/images/idea/7.png =640x320)
-> #### ![image]({{ root_url }}/images/idea/8.png =640x320)
+> {% img /images/idea/7.png 640 320 %}
+>
+> {% img /images/idea/8.png 640 320 %}
 
 ***
 
 Java注释模板设置
 --------------------------
 
-> #### ![image]({{ root_url }}/images/idea/9.png =640x320)
+> {% img /images/idea/9.png 640 320 %}
 
 ***
 
 编码设置
 --------------------------
 
-> #### ![image]({{ root_url }}/images/idea/10.png =640x320)
+> {% img /images/idea/10.png 640 320 %}
 
 ***
 
 Tomcat配置
 --------------------------
 
-> #### ![image]({{ root_url }}/images/idea/11.png =640x320)
+> {% img /images/idea/11.png 640 320 %}
 
 ***
 
 Jdk设置
 --------------------------
 
-> #### ![image]({{ root_url }}/images/idea/12.png =640x320)
+> {% img /images/idea/12.png 640 320 %}
 
 ***
